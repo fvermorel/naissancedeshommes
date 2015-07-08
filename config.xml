@@ -4,14 +4,18 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>PhoneGap Build Application</name>
+<name>La naissance des hommes</name>
 
 <description>
-A simple PhoneGap Build application.
+Comment les êtres humains sont venus sur Terre et ce qui leur est arrivé
 </description>
 
-<author href="https://example.com" email="you@example.com">
-Your Name
-</author>
+<author href="http://www.oracle-editions.com/" email="fvermorel@gmail.com">
+      Oracle Editions
+    </author>
+	<preference name="orientation" value="landscape" />
+	<icon src="icon.png" />
+	<gap:splash src="splash.png" />
 
 </widget>
+
