@@ -25,6 +25,7 @@ function loadAssets (assets, callback) {
 				case "jpg":
 				case "png":
 				case "gif":
+				case "mp4":
 					// Chargement d'image
 					$("<img>", {
 						"src": url
