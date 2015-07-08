@@ -1,15 +1,21 @@
 ﻿$(document).ready(function(){
 	
 		 loadAssets([
+<<<<<<< HEAD
   
  
 
 /*       "resources/LNDH_001.mp4",
+=======
+
+       "resources/LNDH_001.mp4",
+>>>>>>> origin/master
 	   "resources/LNDH_002.mp4",
 	   "resources/LNDH_003.mp4",
 	   "resources/LNDH_004.mp4",
 	   "resources/LNDH_005.mp4",
 	   
+<<<<<<< HEAD
 	   "resources/LNDH_006.mp4",
 	   "resources/LNDH_007.mp4",
 	   "resources/LNDH_008.mp4",
@@ -32,6 +38,9 @@
 	   "resources/LNDH_0022.mp4",
 	   "resources/LNDH_0023.mp4",
 	   "resources/LNDH_0024.mp4"*/
+=======
+	 
+>>>>>>> origin/master
    
     ], function() {
         startApp();
