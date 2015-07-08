@@ -1,5 +1,5 @@
 function loadAssets (assets, callback) {
-	// Vérifie l'existence du loader, sinon le créer
+	// VÃ©rifie l'existence du loader, sinon le crÃ©er
 	var loader = $("body > #loader");
 	if (loader.length == 0) {
 		loader = $("<div>", {
@@ -25,6 +25,7 @@ function loadAssets (assets, callback) {
 				case "jpg":
 				case "png":
 				case "gif":
+				case "mp4":
 					// Chargement d'image
 					$("<img>", {
 						"src": url
