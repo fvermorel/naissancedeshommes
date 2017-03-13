@@ -1,450 +1,1182 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Demo</title>
-<link rel="stylesheet" href="css/idangerous.swiper.css">
-<link rel="stylesheet" type="text/css" href="css/styleslide.css" />
-<link rel="stylesheet" type="text/css" href="css/a1.css" />
-<link rel="stylesheet" type="text/css" href="css/nuages.css" />
-<script type="text/javascript" src="js/jquery.js"></script>
-<!--	<script type="text/javascript" src="js/old.js"></script>	
-		<script type="text/javascript" src="js/book.js"></script> 	-->
-<!--	Plugin jQuery pour animations basées sur courbe de Bézier (ex : sinusoïde) -->
-<!--<script src="js/jquery.path.js"></script>
-<script src="js/jquery-ui.min.js"></script>-->
-<!--	API CCom Interactive -->
-<script src="js/ccom.js"></script>
-<script type="text/javascript" src="js/encart.js"></script>
-<script type="text/javascript" src="js/script1.js"></script>
-<link rel="stylesheet" href="loader.css">
-<script type="text/javascript" src="loader.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-
-
-<!-- jQuery Plugin -->
-
-</head>
-<body>
-
-<!-- Load chapiter -->
-
-    
-    
-
-  
-
-
-<div class="swiper-container">
-<div id="retourAccueil"><a href="index.html"><img src="img/home.png"/></a></div>
-  <div class="swiper-wrapper chapitre1">
-  
-  <div class="swiper-slide page0" data-hash="slide0">
-  
-      <div id="text">
-      
-   <div id="preloader">
-<div id="textechargement">
-    <center>
-        <br />
-        <br />
-        <br />
-        <br />
-        <font size="5em"  face="EccentricStd">Chapitre 1</font><br />
-        <hr width="20%" size="1px" color="#FE2EC8">
-      Le début de l'humanité<br />
-    </center>
-    </div>
-    <div id="chargement"></div>
-</div>
-       
-          <div class="next"> <img id="next0" src="img/next.png" alt="menu" class="arrow-right" /> </div>
-          
-      </div>
-    </div>
-  
-  
-  
-    <div class="swiper-slide page1" data-hash="slide1">
-  
-      <div id="text">
-      
-        <div id="video1">
-        	<video   width="100%" height="100%" id="videotest1"  loop="true"    >
-  				<source src="resources/LNDH_001.mp4" type="video/mp4"   />
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+             <meta name="apple-mobile-web-app-capable" content="yes" />
+		<script type="text/javascript" src="fr/js/jquery.js"></script>
+		<script src="cordova.js"></script>
+		 <script type="text/javascript" src="fr/js/book.js"></script> 	
  
-			</video>
-      	</div>
-        <div class="encart ">
-          <div id="lecture">
-          <div id="ecrit" class="ecrit"></div>
-          <div id="son1" class="son">
-          <audio id="voix1"  preload="auto" autostart="false" type="audio/mpeg">
-          <source src="voix/chapitre1.mp3" autostart="false" type="audio/mpeg">
-          </audio>
-          </div>
-            <audio id="bruit1" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a1.mp3" autostart="false" type="audio/mpeg"  >
-            </audio>
-          </div>
-          <div class="texte"> <span class="titre"><center>De fragiles créatures </center></span>
-            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
-         Au milieu des lions, des gazelles, des poissons et des oiseaux, les hommes faisaient peine à voir. Ni griffe, ni crocs pour se défendre ou attaquer. Pas de fourrure non plus pour se protéger du froid. Incapable de courir vite pour éviter le danger non plus que de s’envoler dans les airs. Ils ne savaient pas non plus nager comme des poissons ni creuser des terriers comme des lapins. Les hommes avançaient nus, grelottant de froid. Ils devaient fouiller la terre pour manger des racines. Les lions, les loups et toutes les autres bêtes féroces n’en faisaient qu’une bouchée. Une créature aussi chétive, aussi fragile, aussi démunie, comment pourrait-elle survivre ?</div>
-        </div>
-       
-          <div class="next"> <img id="next1" src="img/next.png" alt="menu" class="arrow-right" /> </div>
-          
-      </div>
-    </div>
-    
-    <!-- Fin page 1-->
-    
-    <div class="swiper-slide page2" data-hash="slide2">
-      <div id="text">
-        <div id="video2">
-        	<video  width="100%" height="100%" id="videotest2"  loop="true"    >
-  				<source src="resources/LNDH_002.mp4" type="video/mp4"   />
+      <!-- Plugin jQuery pour animations basées sur courbe de Bézier (ex : sinusoïde) -->
+   
+<script src="fr/js/jquery.path.js"></script>
+<script src="fr/js/jquery-ui.min.js"></script>
+<!-- API CCom Interactive -->
+<script src="fr/js/ccom.js"></script>
+<!-- script rindra -->
+ <script type="text/javascript" src="fr/js/script.js"></script>
  
-			</video>
-      	</div>
-        <div class="encart ">
-          <div id="lecture">
-            <div id="ecrit" class="ecrit"> </div>
-            <div id="son2" class="son">
-              <audio id="voix2" preload="auto" autostart="false" type="audio/mpeg">
-                <source src="voix/chapitre2.mp3" autostart="false" type="audio/mpeg"  >
-              </audio>
-            </div>
-            <audio id="bruit2" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a2.mp3" autostart="false" type="audio/mpeg"  >
-            </audio>
-          </div>
-          <div class="texte"> <span class="titre"><center>Le feu de l'Olympe</center></span>
-            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
-          Le titan Prométhée prit les hommes en pitié. Il s’était battu contre la tyrannie de Chronos et il avait le coeur juste. Les hommes n’avaient rien pour eux. C’était injuste. Il leur fallait quelque chose ! Discrètement, Prométhée déroba le feu de l’Olympe qu’il dissimula dans un roseau creux. <br>
-Avec le feu, la vie des hommes ne serait pas du tout la même : ils pourraient se chauffer, se défendre contre les bêtes, cuire leurs aliments. Ils pourraient fabriquer des armes en métal et devenir les maîtres de la terre ! Ils étaient les plus misérables des animaux, Prométhée en avait fait les plus redoutables. </div>
-        </div>
-       
-          <div class="next"> <img id="next2" src="img/next.png" alt="menu" class="arrow-right" /> </div>
-           <div class="prev"> <img id="prev2" src="img/prev.png" alt="menu" class="arrow-left" /></div>
-      </div>
-    </div>
-    
-    <!-- Fin page 2-->
-    
-    <div class="swiper-slide page3" data-hash="slide3">
-      <div id="text">
-        <div id="video3">
-        	<video  width="100%" height="100%" id="videotest3"  loop="true"    >
-  				<source src="resources/LNDH_003.mp4" type="video/mp4"   />
  
-			</video>
-      	</div>
-        <div class="encart ">
-          <div id="lecture">
-            <div id="ecrit" class="ecrit"> </div>
-            <div id="son3" class="son">
-              <audio id="voix3" preload="auto" autostart="false" type="audio/mpeg">
-                <source src="voix/chapitre3.mp3" autostart="false" type="audio/mpeg"  >
-              </audio>
-            </div>
-            <audio id="bruit3" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a3.mp3" autostart="false" type="audio/mpeg"  >
-            </audio>
-          </div>
-          <div class="texte"> <span class="titre">Le partage du boeuf</span> <br />
-            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
-           Quand Zeus, le roi des dieux, se rendit compte que Prométhée avait donné le feu aux hommes, il entra dans une colère furieuse. LeTitan avait agi sans lui demander son avis ! Zeus décida de se venger contre les hommes. Il les condamna à lui verser la moitié de toutes leurs richesses, de tout ce qu’ils mangeraient. <br>
 
-Prométhée vint une fois de plus en aide des hommes. Lors du sacrifice du premier bœuf, il leur dit de faire deux parts : une part qui semblait plus grande et qui donnait plus envie mais qui en fait ne contenait que les os, une autre qui semblait plus petite mais dans laquelle il y avait la viande et la graisse. Zeus tomba dans le piège et prit les os. Les règles du partage étaient désormais fixées : Les hommes pourraient jouir en paix des résultats de leur travail. </div>
-        </div>
-      
-        <div class="next"> <img id="next3" src="img/next.png" alt="menu" class="arrow-right" /> </div>
-         <div class="prev"> <img id="prev3" src="img/prev.png" alt="menu" class="arrow-left" /></div>
-      </div>
-    </div>
-    
-    <!-- Fin page 3-->
-    
-    <div class="swiper-slide page4" data-hash="slide4" id="slide4">
-      <div id="text">
-        <div id="video4">
-        	<video  width="100%" height="100%" id="videotest4"  loop="true"    >
-  				<source src="resources/LNDH_004.mp4" type="video/mp4"   />
- 
-			</video>
-      	</div>
-
-        <div class="encart ">
-          <div id="lecture">
-            <div id="ecrit" class="ecrit"> </div>
-            <div id="son4" class="son">
-              <audio id="voix4" preload="auto" autostart="false" type="audio/mpeg">
-                <source src="voix/chapitre4.mp3" autostart="false" type="audio/mpeg"  >
-              </audio>
-            </div>
-            <audio id="bruit4" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a4.mp3" autostart="false" type="audio/mpeg"  >
-            </audio>
-          </div>
-          <div class="texte"> <span class="titre">Prométhée puni</span> <br />
-            ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
-          C’en était vraiment trop pour Zeus qui se mit à détester Prométhée. Il demanda à Hermès et à
-
-Arès, ses deux fils, d’arrêter le Titan. Puis il enchaîna Prométhée à un rocher pour le condamner
-
-à une torture terrible : chaque jour un aigle descendrait du ciel et lui dévorerait le foie. Et chaque
-
-jour son foie repousserait et le lendemain tout recommencerait. <br>
-
-Prométhée payait son amour pour les hommes qui sans lui auraient eu une existence plus
-
-misérable que celle des vers de terre. Mais il avait gardé le don de prémonition. Il savait qu’un
-
-jour, le fils de Zeus et d’une mortelle viendrait le délivrer...</div>
-        </div>
-  
-         <div class="prev"> <img id="prev4" src="img/prev.png" alt="menu" class="arrow-left" /></div>
-        <div class="next"> <a href="chapitre2.html"><img id="next4" src="img/next.png" alt="menu" /></a> </div>
-      </div>
-    </div>
-    
-    <!-- Fin page 4--> 
-    
- 
-    
-    
-    
-  </div>
-  <div class="pagination"></div>
-  <div id="nav">
-    <div id="menu"> <img id="menuImg" src="img/menu.png" alt="menu" /> </div>
-  </div>
-  <div id="chapters">
-           <a href="index.html"> <img src="resources/menu1.jpg"  alt=""/> </a>
-           <a href="chapitre2.html"> <img src="resources/menu2.jpg"  alt=""/> </a>
-           <a href="chapitre3.html"> <img src="resources/menu3.jpg"  alt=""/> </a>
-           <a href="chapitre4.html"> <img src="resources/menu4.jpg"  alt=""/> </a>
-           <a href="chapitre5.html"> <img src="resources/menu5.jpg"  alt=""/> </a>
-        
-            
-            </div>
-</div>
-<script src="js/idangerous.swiper-2.1.min.js"></script> 
-<script src="js/idangerous.swiper.hashnav-1.0.js"></script> 
-<script>
-
-
-	$('#next0').click(function(){
-		$( ".swiper-wrapper" ).animate({
-  
-    left: "-100%",
-
-  }, 500, function() {
-    // Animation complete.
-  });
-	
-	$('#bruit1').playMedia();
-		$('#voix1').playMedia();
-
-		   	   
-	   var video1 = $('#videotest1');
-           video1[0].play();	  
-           return false;
-	
-	
-
-	
-});
- 
-  	$('#next1').click(function(){
-		$( ".swiper-wrapper" ).animate({
-  
-    left: "-200%",
-
-  }, 500, function() {
-    // Animation complete.
-  });
+	<link rel="stylesheet" type="text/css" href="fr/css/style.css" />
+        <link rel="apple-touch-icon" href="fr/iconoracle.png" />
+        <style type="text/css">
 		
-		
-		$('#bruit2').playMedia();
-		$('#voix2').playMedia();
-			$('#bruit1').pauseMedia();
-		$('#voix1').pauseMedia();
-		   	   
-	   var video1 = $('#videotest1');
-	    var video2 = $('#videotest2');
-       video1[0].pause(); 	
-           video2[0].play();	  
-           return false;
-
-	
-	
-
-	
-});
-
-
-$('#next2').click(function(){
-	
-	
-	$( ".swiper-wrapper" ).animate({
+		@font-face {
+    font-family: "zilah";
+    src: url(fr/img/zillah.otf);
+		}
+		@font-face{
+	font-family: "Offside";
+	src: url(fr/img/Offside-Regular.ttf);
+}
   
-    left: "-300%",
-
-  }, 500, function() {
-    // Animation complete.
-  });
+        #autreslivres {
+    background-color: rgba(223, 233, 235, 0.7);
+    border-radius: 10px;
+    height: 85%;
+    overflow: auto;
+    padding: 0.9%;
+    position: absolute;
+    right: 5%;
+    top: 7%;
+    width: 15%;
+    z-index: 2;
+	}
 	
-		$('#bruit3').playMedia();
-		$('#voix3').playMedia();
-			$('#bruit2').pauseMedia();
-		$('#voix2').pauseMedia();
-		
-		  var video2 = $('#videotest2');
-	    var video3 = $('#videotest3');
-       video2[0].pause(); 	
-           video3[0].play();	  
-           return false;
+.livre {
+	width:100%;
+	overflow:none;
+
+}
+
+#background img {
+    height: 100%;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+}
+
+#titreCollec {
+	font-family: "EccentricStd";
+	font-weight: normal;
+	color:#4e7b7a;
+	font-size: 1.6em;
+}
+
+#lecture {
+    height: 10%;
+    width: 40%;
+    z-index: 6;
+}
+
+#reduire {
+	height: 3.1%;
+    left: 92%;
+    position: absolute;
+    top: 3%;
+    width: 4%;
+    z-index: 6;
+}
+
+.plusMoins{
+background-image: url(img/btn-ouvrir.png);
+    background-repeat: no-repeat;
+    background-size: 65% 100%;
+    float: left;
+    height: 100%;
+    margin-right: 5%;
+    width: 94%;
+}
+
+#titreCOUV {
+	color: #fff;
+    font-family: "zillah";
+    font-size: 4.6em;
+    font-weight: normal;
+    height: 30%;
+    left: 7%;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    position: absolute;
+    top: 5%;
+    width: 50%;
+    z-index: 6;
+}
+
+
+
+#boiteBoutons{
+	height: 5%;
+    left: 4%;
+    position: absolute;
+    top: 92%;
+    width: 30%;
+    z-index: 6;
+
+}
+
+#boiteBoutons img {
+	height:100%;
+	float:left;
+	margin-left:10%;
+	
+}
+
+#boiteBoutons2{
+	height: 5%;
+    right: 5%;
+    position: absolute;
+    top: 92%;
+    width: 15%;
+    z-index: 6;
+
+}
+
+#boiteBoutons2 img {
+	height:100%;
+	float:left;
+	margin-left:20%;
+	
+}
+
+#btnChouette{
+	height:100%;
+	width:18%;
+	background-image:urlfr/(resources/couv/img/btnChouette.png);
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+}
+#btnanglais{
+	background-image: url("fr/resources/couv/img/drapeau-anglais");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    top: 0;
+    width: 18%;
+}
+#btnInfo{
+	background-image: url("fr/resources/couv/img/btnInfo.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    left: 34%;
+    position: absolute;
+    top: 0;
+    width: 18%;
+}
+
+#btnSon{
+	background-image: url("fr/resources/couv/img/btnSon.png");
+    background-repeat: no-repeat;
+
+    background-size: 100% auto;
+    height: 100%;
+    left: 66%;
+    position: absolute;
+    top: 0;
+    width: 18%;
+}
+
+#wrapper {
+	  width: 1024px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  height: 768px;
+	
+    position: relative!important;
+	overflow:hidden;
+}
+
+#histoire {
 	   
+    top: 80%;
+    left: -2%;
+	 color: #f2569d;
+	height:auto;
+    /* overflow: hidden; */
+    position: absolute;
+    /* text-align: center; */
+    z-index: 16;
+    text-decoration: none;
+    text-indent: 5%;
+    background-color: #fff;
+    padding: 0.5%;
+    font-family: verdana;
+	background-image:url("fr/img/icone-panier.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:right;
+	border-radius:2em;
+	padding-right:5%;
+	padding-top:0.5%;
+	padding-bottom:0.5%;
+	 
+	font-weight:bold;
+	font-size:1.3em;
+	
+	
+}
+
+#histoire a {
+	 color: #f2569d;
+}
+
+#coinmalin {
+	   
+    top: 70%;
+    left: -2%;
+	 color: #f2569d;
+	height:auto;
+    /* overflow: hidden; */
+    position: absolute;
+    /* text-align: center; */
+    z-index: 16;
+   
+    text-indent: 5%;
+    background-color: #fff;
+    padding: 0.5%;
+    font-family: verdana;
+	background-image:url("fr/img/icone-livre.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:right;
+	border-radius:2em;
+	padding-right:5%;
+	padding-top:0.5%;
+	padding-bottom:0.5%;
+	 
+	font-weight:bold;
+	font-size:1.3em;
+	
+	
+}
+
+#coinmalin a {
+	 color: #f2569d;
+	  text-decoration: none;
+}
+
+.chapitrepalpite {
+	bottom: 0.25%;
+    left: 45.15%;
+	    height: 13.1%;
+    width: 10.5%;
+	position:absolute;
+	opacity:0.7;
+	
+	z-index:9;
+	
+}
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-container {
+  width: 1024px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  height: 768px;
+ 
+  text-align: center;
+}
+
+        </style>
+       
+        
+        <title>LA NAISSANCE DES HOMMES</title>
+	</head>
+	<body>
+
+		<div id="wrapper">
+            
+           
+
+            <div id="titreCOUV">LA NAISSANCE<br> DES HOMMES
+            </div>
+     
+         		
+          <div id="histoire" class="titre"> Dans la même collection</div>
+        <a href="fr/coinmalin.html"><div id="coinmalin" class="titre">Le coin malin</div></a>
+        
+        
+        
+      
+        
+<!--getFileContents
+        <div id="navigation">
+		 <ul class="bateaux">
+        <li><p><a href="chapitre1.html">L'histoire</a></p></li>
+        <li><p><a href="coinmalin.html">coin malin</a></p></li>
+        </ul>
+        </div>-->
+        
+        <div id="reduire"><div id="plusMoins" class="plusMoins"></div></div>
+        <div id="boiteBoutons">
+        	<a href="index_en.html"> <img src="fr/img/drapeau-anglais.png" id="anglais"  ></a>
+          <img src="fr/img/chouette-icon.png" id="oracle"  alt=""/> 
+<!--          <img src="fr/img/icone-info.png" id="information" alt=""/> -->
+          <img src="fr/img/references.png" alt="" id="references"/> </div> 
+          
+          
+          <div id="boiteBoutons2">
+      
+       
+       
+         <img src="fr/img/fb.png" id="facebook"  alt=""/>
+        <img src="fr/img/twitter.png" id="twitter"  alt=""/> </div> 
+       <div class="chapitrepalpite">
+       <svg width="100%" height="100%">
+  <circle id="orange-circle" r="30" cx="50" cy="50" fill="transparent"  stroke="#f2569d" stroke-width="6"   />
+  
+  <animate 
+           xlink:href="#orange-circle"
+           attributeName="r"
+           from="30"
+           to="45" 
+           dur="1s"
+         repeatCount="indefinite"
+            />
+			 <animate 
+           xlink:href="#orange-circle"
+           attributeName="stroke-width"
+           from="6"
+           to="1" 
+           dur="1s"
+         repeatCount="indefinite"
+            />
+</svg>
+       </div>
+       
+        
+       
+        <!--<div id="autreslivres">
+        
+        <div id="titreCollec">Dans la même collection</div>
+        	<div >
+            <img src="resources/couv/img/origine.jpg" class="livre"> </div>
+            <div class="livre"> <img src="resources/couv/img/jason.jpg" class="livre">
+            </div>
+           
+        
+        </div>-->
+        
+        
+			
+			<div id="background" ><!-- ici seront chargés les background des pages -->
+		<img id="page" src="fr/resources/couv/img/couverture.jpg" />
+			</div>
+			 <div class="pagination"></div>
+  <div id="nav">
+    <div id="menu"> <img id="menuImg" src="fr/img/menu.png" alt="menu" /> </div>
+  </div>
 		
 	
-	
-});
+         <div class="popup chapitres">
+        <div class="croixfermeture chapitresfermer"><img src="fr/img/croix.png"  alt=""/></div>
+        <h2>L'histoire</h2>
+        <div class="imageschapitres"> <a href="fr/chapitre1.html"> <img src="fr/resources/menu1.jpg" class=""  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="fr/chapitre2.html"> <img src="fr/resources/menu2.jpg"  alt=""/> </a></div>
+           <div class="imageschapitres"><a href="fr/chapitre3.html"> <img src="fr/resources/menu3.jpg"  alt=""/> </a></div>
+         <div class="imageschapitres">  <a href="fr/chapitre4.html"> <img src="fr/resources/menu4.jpg"  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="fr/chapitre5.html"> <img src="fr/resources/menu5.jpg"  alt=""/> </a></div>
+           <div class="imageschapitres"><a href="fr/coinmalin.html"> <img src="fr/resources/menu6.jpg"  alt=""/> </a></div>
+        
+        
+        </div>
+        
+        <div class="popup collection">
+        <div class="croixfermeture collectionfermer"><img src="fr/img/croix.png"  alt=""/></div>
+        <h2>Dans la même collection</h2>
+        
+        <div class="overflow">
+        <div class="presentationlivre bgrose" id="monde" >
+        	<div class="iconelivre">  <img src="fr/img/icons/iconoriginemonde.png"  alt=""/></div>
+            <div class="descriptionlivre">
+            <h3 id="monde"> <a href="#" > L'Origine du Monde</a></h3>
+            <p class="rose"><a href="#" > Au début règne le Chaos, puis le Ciel qui recouvre la Terre. Enfermé dans les profondeurs, le titan Chronos veut devenir maître de l’univers...</a></p>
+            </div>
+            
+        
+        </div>
+        
+        <div class="presentationlivre " id="thesee">
+        	<div class="iconelivre"><a href="#" > <img src="fr/img/icons/iconthesee.png"  alt=""/></a></div>
+            <div class="descriptionlivre">
+            <h3> <a href="#" > Minos et Thésée</a></h3>
+            <p class="rose"><a href="#" >  Athènes doit  livrer chaque année neuf jeunes hommes et neuf jeunes filles en pâture au terrible Minotaure.
+Qui la délivrera de cette malédiction ?</a></p>
+            </div>
+            
+        
+        </div>
+        
+        <div class="presentationlivre bgrose" id="hommes">
+        	<div class="iconelivre"><a href="#" > <img src="fr/img/icons/iconoriginehommes.png"  alt=""/></a></div>
+            <div class="descriptionlivre">
+            <h3> <a href="#"> La naissance des hommes</a></h3>
+            <p class="rose"><a href="#" > Les hommes sont des créatures démunies de tout, plus misérables que les vers de terre. Comment vont ils survivre ? Heureusement, le titan Prométhée les prend en pitié...</a></p>
+            </div>
+            
+        
+        </div>
+        
+        <div class="presentationlivre " id="jason">
+        	<div class="iconelivre"><a href="#" > <img src="fr/img/icons/iconjason.png"  alt=""/></a></div>
+            <div class="descriptionlivre">
+            <h3><a href="#" > Jason et les argonautes</a></h3>
+            <p class="rose"> <a href="#" > Pour retrouver son trône, Jason doit conquérir la Toison d’Or. Pour cela, il recrute les plus grands héros de la Grèce, les  argonautes.</a></p>
+            </div>
+            
+        
+        </div>
+        
+        <div class="presentationlivre bgrose" id="psyche">
+        	<div class="iconelivre"> <a href="#" > <img src="fr/img/icons/iconamour.png"  alt=""/></a></div>
+            <div class="descriptionlivre">
+            <h3> <a href="#" > Amour et Psyché</a></h3>
+            <p class="rose"> <a href="#" > La princesse Psyché est si belle qu’elle a rendu jalouse la déesse Aphrodite. Comment s'en sortira t-elle ?</a></p>
+            </div>
+            
+        
+        </div>
+        </div>
+        
+        </div>
+       
+       <div class="popup references">
+        <div class="croixfermeture referencesfermer"><img src="fr/img/croix.png"  alt=""/></div>
+        <h2>Bibliographie</h2>
+       <div class="overflow">
+       <div class="bibliographie">
+       <div class="genre titre">Littérature grecque</div>
+       <div class="left w70"  >Homère, <em>“Illiade” et “Odyssée”</em><br>
+Hésiode, <em>“Théogonie”</em><br>
+Eschyle, <em>Pièces</em><br>
+Euripide, <em>Pièces</em><br>
+Sophocle, <em>Pièces</em><br>
+Platon, <em>Dialogues</em><br>
+</div>
+       </div>
+       
+        <div class="bibliographie">
+       <div class="genre titre" >Littérature latine</div>
+       <div class="left w70">Ovide, <em>“Les métamorphoses”</em><br>
+Virgile, <em>“Enéide”</em><br>
+Sénèque, <em>Pièces</em><br>
+Apulée, <em>“L’âne d’or”</em>
+</div>
+       </div>
+       
+        <div class="bibliographie">
+       <div class="genre titre" >Littérature française</div>
+       <div class="left w70">Racine, <em>Pièces </em><br>
+Corneille,<em> Pièces</em><br>
+Giraudoux, <em>Pièces</em><br>
+Jean Anouilh, <em>“Antigone”</em>
+</div>
+       </div>
+        <div class="bibliographie">
+       <div class="genre titre" >Critiques et études</div>
+       <div class="left w70">
+            
+      
+       Paul Veyne, <em>“Les Grecs ont-ils cru à leurs mythes ?” </em><br>
+Moses Finley, <em>“Le monde d’Ulysse”</em><br>
+Jacqueline de Romilly, <em>“La tragédie grecque”</em><br>
+Friedrich Nietzsche, <em>“La naissance de la tragédie”</em> <br>
 
+</div>
+       </div>
+       
+     
+        <div class="bibliographie">
+       <div class="genre titre" >Encyclopédie</div>
+       <div class="left w70">
+       
+       Wikipédia : l’encyclopédie libre et bénévole
+</div>
+       </div>
+       </div>
+       
+       </div>
+       
+         <div class="popup equipe">
+        <div class="croixfermeture equipefermer"><img src="fr/img/croix.png"  alt=""/></div>
+        <h2>Oracle, c'est quoi ?</h2>
+       <div>
+       <div class="genre titre">&nbsp;</div>
+       <div class="biblio">
+       
+       <p class="rose" >
+       Oracle Edition est née du désir de proposer les histoires anciennes, les légendes populaires et les mythes fondateurs sous la forme de livres numériques illustrés, animés et sonorisés.
+       </p>
+       <p>Nous croyons que ces histoires sont les plus belles et les plus intelligentes qui ont jamais été racontées…  que ce sont les plus belles parce que ce sont les plus intelligentes ! Sources d’inspiration inépuisables pour les artistes au fil des siècles, elles ont structuré notre civilisation.
+       </p>
+       <p class="rose" style="text-align:center;" ><em><strong>« Ce ne sont pas juste des histoires, ce sont des univers. »</strong></em></p>
+       <p>Quand on prétend qu’on va instruire les enfants en les amusant on court un double risque : celui d’être ennuyeux et de ne pas amuser, celui d’être superficiel et de ne pas instruire. Nous espérons éviter ce double écueil : les légendes et les mythes sont par définition des sources d’apprentissage. C’est donc logiquement que nous les traitons de façon pédagogique.</p>
+       <p>
 
-$('#next3').click(function(){
-	
-	$( ".swiper-wrapper" ).animate({
+La réalisation de ces livres numériques a nécessité de rassembler une équipe pluridisciplinaire : chef de projet / éditeur, illustrateurs, graphiste, animateur, développeurs, acteurs... 
+       </p>
+  <p>
   
-    left: "-400%",
-
-  }, 500, function() {
-    // Animation complete.
-  });
-		$('#bruit4').playMedia();
-		$('#voix4').playMedia();
-			$('#bruit3').pauseMedia();
-		$('#voix3').pauseMedia();
-		   
-		     var video3 = $('#videotest3');
-	    var video4 = $('#videotest4');
-       video3[0].pause(); 	
-           video4[0].play();	  
-           return false;
-
-	
-});
-
-
-
-
-
-
-
-$('#prev2').click(function(){
-	
-		$( ".swiper-wrapper" ).animate({
   
-    left: "-100%",
+      <img src="fr/img/btn-equipe.png" class="boutonequipe" id="equipe"  alt=""/> </p>
+       </div>
+       </div>
+       </div>
+       
+    <!--  Facebook-->
+       <div class="parentalgate" id="facebookgate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('https://www.facebook.com/Oracle-%C3%89ditions-490954901072101/', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="facebookgate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('https://www.facebook.com/Oracle-%C3%89ditions-490954901072101/', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="facebookgate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('https://www.facebook.com/Oracle-%C3%89ditions-490954901072101/', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="facebookgate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('https://www.facebook.com/Oracle-%C3%89ditions-490954901072101/', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="facebookgate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('https://www.facebook.com/Oracle-%C3%89ditions-490954901072101/', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+      
+       
+       
+       
+       
+      <!-- Twitter-->
+      
+          <div class="parentalgate" id="twittergate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('https://twitter.com/OracleEditions', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="twittergate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('https://twitter.com/OracleEditions', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="twittergate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('https://twitter.com/OracleEditions', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="twittergate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('https://twitter.com/OracleEditions', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="twittergate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('https://twitter.com/OracleEditions', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+      
+      
+       
+       
+      <!-- Equipe-->
+      
+            <div class="parentalgate" id="equipegate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/equipe-oracle/', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="equipegate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/equipe-oracle/', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="equipegate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/equipe-oracle/', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="equipegate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/equipe-oracle/', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="equipegate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/equipe-oracle/', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+      
+      
+        
+       
+       <!-- Thesee-->
+       
+          <div class="parentalgate" id="theseegate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-minos-et-thesee/', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="theseegate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-minos-et-thesee/', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="theseegate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-minos-et-thesee/', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="theseegate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-minos-et-thesee/', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="theseegate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-minos-et-thesee/', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+       
+       
+       <!-- Monde-->
+       
+        <div class="parentalgate" id="mondegate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-lorigine-du-monde/', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="mondegate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-lorigine-du-monde/', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="mondegate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-lorigine-du-monde/', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="mondegate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-lorigine-du-monde/', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="mondegate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-lorigine-du-monde/', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
 
-  }, 500, function() {
-    // Animation complete.
-  });
-	
-		$('#bruit1').playMedia();
-		$('#voix1').playMedia();
-			$('#bruit2').pauseMedia();
-		$('#voix2').pauseMedia();
-		   
-		   var video1 = $('#videotest1');
-	    var video2 = $('#videotest2');
-        	
-           video1[0].play();
-		   video2[0].pause();	  
-           return false;
-	
-
-	
-});
-
-
-$('#prev3').click(function(){
-	
-		$( ".swiper-wrapper" ).animate({
+       <!-- Hommes-->
+       
+          <div class="parentalgate" id="hommesgate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-la-naissance-des-hommes/', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="hommesgate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-la-naissance-des-hommes/', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="hommesgate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-la-naissance-des-hommes/', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="hommesgate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-la-naissance-des-hommes/', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="hommesgate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-la-naissance-des-hommes/', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+       
+   
+       <!-- Jason-->
+             <div class="parentalgate" id="jasongate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-jason-et-les-argonautes/', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="jasongate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-jason-et-les-argonautes/', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="jasongate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-jason-et-les-argonautes/', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="jasongate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-jason-et-les-argonautes/', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="jasongate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-jason-et-les-argonautes/', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+   
+       <!-- Psyche-->
+       
+               <div class="parentalgate" id="psychegate1">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quelle est la capitale de la Grèce ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-amour-et-psyche/', '_system');">&#8226; Athènes </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Washington</a><li></li><a href="#" id="facebookclose" class="closepopup">&#8226; Paris</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="psychegate2">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Lequel de ces personnage est un roi grec ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Napoléon</a><li></li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-amour-et-psyche/', '_system');">&#8226; Agamemnon </a> <li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Lincoln</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="psychegate3">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Laquelle de ces îles est une île grecque ?</strong></em></p>
+    <ul><li><a href="#" id="facebookclose" class="closepopup">&#8226; La Corse</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Le Sri Lanka</a> <li></li>  <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-amour-et-psyche/', '_system');">&#8226;  Lesbos </a>
+  </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="psychegate4">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Quel est le pays où ont été inventés les jeux olympiques ?</strong></em></p>
+    <ul><li> <a href="#" id="facebookclose" class="closepopup">&#8226; Les Etats Unis d'Amérique</a><li></li>   <a href="#" id="facebookclose" class="closepopup">&#8226; Angola</a><li></li>   <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-amour-et-psyche/', '_system');">&#8226;  La Grèce </a> </li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+        <div class="parentalgate" id="psychegate5">
+      <h2> Autorisation parentale</h2>
+     
+       <div class="reponseparents"> 
+            <p class="rose" style="text-align:center;" ><em><strong>Qui est considéré comme le père de la philosophie ?</strong></em></p>
+     <ul><li> <a href="#" onclick="cordova.InAppBrowser.open('http://oracle-editions.com/achat-amour-et-psyche/', '_system');">&#8226;  Socrate </a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Léonard de Vinci</a><li></li> <a href="#" id="facebookclose" class="closepopup">&#8226; Albert Einstein</a></li></ul>
+       </div>
+       <p>&nbsp;</p>
+       </div>
+       
+       
+ 
+ 
+ </div>       
   
-    left: "-200%",
+        <script type="text/javascript" src="fr/index.js"></script>
+         <script>
+    var link = document.getElementById('facebook'); 
+    link.onclick = getNumberfacebook; 
+    
+    function getNumberfacebook() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#facebookgate').html(randomnumber);
+		var facebookgate = "#facebookgate";
+		var facebookconcat = facebookgate + "" + randomnumber;
+		//$('#facebookgate1').html(facebookconcat);
+		$(facebookconcat).toggleClass("visible");
+		
+        return false;
+    }   
+	 $(".closepopup").click(function (){
 
-  }, 500, function() {
-    // Animation complete.
-  });
+          $(".parentalgate").removeClass("visible");
+
+          });
+		  
+		  var link = document.getElementById('twitter'); 
+    link.onclick = getNumbertwitter; 
+    
+    function getNumbertwitter() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#twittergate').html(randomnumber);
+		var twittergate = "#twittergate";
+		var twitterconcat = twittergate + "" + randomnumber;
+		//$('#twittergate1').html(twitterconcat);
+		$(twitterconcat).toggleClass("visible");
+		
+        return false;
+    }   
 	
-		$('#bruit2').playMedia();
-		$('#voix2').playMedia();
-			$('#bruit3').pauseMedia();
-		$('#voix3').pauseMedia();
-		   
-		    var video2 = $('#videotest2');
-	    var video3 = $('#videotest3');
-        	
-           video2[0].play();
-		   video3[0].pause();	  
-           return false;
+	 var link = document.getElementById('equipe'); 
+    link.onclick = getNumberequipe; 
+    
+    function getNumberequipe() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#equipegate').html(randomnumber);
+		var equipegate = "#equipegate";
+		var equipeconcat = equipegate + "" + randomnumber;
+		//$('#equipegate1').html(equipeconcat);
+		$(equipeconcat).toggleClass("visible");
+		
+        return false;
+    }   
+	 var link = document.getElementById('thesee'); 
+    link.onclick = getNumberthesee; 
+    
+    function getNumberthesee() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#theseegate').html(randomnumber);
+		var theseegate = "#theseegate";
+		var theseeconcat = theseegate + "" + randomnumber;
+		//$('#theseegate1').html(theseeconcat);
+		$(theseeconcat).toggleClass("visible");
+		
+        return false;
+    }   
 	
 	
-
+	 var link = document.getElementById('monde'); 
+    link.onclick = getNumbermonde; 
+    
+    function getNumbermonde() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#mondegate').html(randomnumber);
+		var mondegate = "#mondegate";
+		var mondeconcat = mondegate + "" + randomnumber;
+		//$('#mondegate1').html(mondeconcat);
+		$(mondeconcat).toggleClass("visible");
+		
+        return false;
+    }   
 	
-});
-
-
-$('#prev4').click(function(){
+	 var link = document.getElementById('hommes'); 
+    link.onclick = getNumberhommes; 
+    
+    function getNumberhommes() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#hommesgate').html(randomnumber);
+		var hommesgate = "#hommesgate";
+		var hommesconcat = hommesgate + "" + randomnumber;
+		//$('#hommesgate1').html(hommesconcat);
+		$(hommesconcat).toggleClass("visible");
+		
+        return false;
+    }   
 	
+	 var link = document.getElementById('jason'); 
+    link.onclick = getNumberjason; 
+    
+    function getNumberjason() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#jasongate').html(randomnumber);
+		var jasongate = "#jasongate";
+		var jasonconcat = jasongate + "" + randomnumber;
+		//$('#jasongate1').html(jasonconcat);
+		$(jasonconcat).toggleClass("visible");
+		
+        return false;
+    }   
 	
-		$( ".swiper-wrapper" ).animate({
-  
-    left: "-300%",
-
-  }, 500, function() {
-    // Animation complete.
-  });
-		$('#bruit3').playMedia();
-		$('#voix3').playMedia();
-			$('#bruit4').pauseMedia();
-		$('#voix4').pauseMedia();
-		   
-		    var video3 = $('#videotest3');
-	    var video4 = $('#videotest4');
-        	
-           video3[0].play();
-		   video4[0].pause();	  
-           return false;
-
-});
-
-
-
-
-  
-	$('#son1').click(function() {
+	 var link = document.getElementById('psyche'); 
+    link.onclick = getNumberpsyche; 
+    
+    function getNumberpsyche() {
+        var minNumber = 1; // le minimum
+        var maxNumber = 5; // le maximum
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // la fonction magique
+        //$('#psychegate').html(randomnumber);
+		var psychegate = "#psychegate";
+		var psycheconcat = psychegate + "" + randomnumber;
+		//$('#psychegate1').html(psycheconcat);
+		$(psycheconcat).toggleClass("visible");
+		
+        return false;
+    }   
 	
-		$('#voix1').pauseMedia();
-	});
-	$('#son2').click(function() {
-		$('#voix2').pauseMedia();
-	});
-	$('#son3').click(function() {
-		$('#voix3').pauseMedia();
-	});
-	$('#son4').click(function() {
-		$('#voix4').pauseMedia();
-	});
-	
-	
-  </script> 
-<script src="js/encart.js"></script>
-<script src="js/loading.js"></script> 
+  </script>
+        <script type="text/javascript">
+		
+		
+            app.initialize();
+			
+			  
+			
+			  $("#histoire").click(function (){
 
-<!-- Preloader -->
+          $(".collection").toggleClass("visible");
 
-</body>
+          });
+		  
+		   $(".collectionfermer").click(function (){
+
+          $(".collection").toggleClass("visible");
+
+          });
+		  
+		  
+			  $("#oracle").click(function (){
+
+          $(".equipe").toggleClass("visible");
+
+          });
+		  
+		   $(".equipefermer").click(function (){
+
+          $(".equipe").toggleClass("visible");
+
+          });
+		  
+		    $("#references").click(function (){
+
+          $(".references").toggleClass("visible");
+
+          });
+		  
+		   $(".referencesfermer").click(function (){
+
+          $(".references").toggleClass("visible");
+
+          });
+		  
+		  
+		    $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		 
+		
+            </script>
+        
+    </body>
 </html>
