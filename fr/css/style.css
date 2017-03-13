@@ -815,7 +815,11 @@ canvas {
 	font-size: 0.55em;
 	z-index: 8;
 	position: absolute;
+<<<<<<< HEAD:fr/css/style.css
 	opacity: 0;
+=======
+/*	opacity: 0;*/
+>>>>>>> origin/master:css/style.css
 	padding: 3%;
 	width: 9%;
 	height: 4%;
@@ -830,6 +834,7 @@ canvas {
 	background-image: url("../img/bulledroite.png");
 	
 }
+<<<<<<< HEAD:fr/css/style.css
 .presentationlivre  {
 	padding:3%;
 	height:23%;
@@ -946,3 +951,5 @@ font-size:40px;
 		
 	
 }
+=======
+>>>>>>> origin/master:css/style.css
