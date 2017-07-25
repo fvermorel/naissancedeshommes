@@ -396,6 +396,9 @@ $("#menu").click(function (){
           });
 
 	$('#next0').click(function(){
+		
+	
+	$(".animpage19").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-100%",
@@ -416,7 +419,8 @@ $('#bruit19').playMedia();
  
 
 $('#next19').click(function(){
-	
+	$(".animpage19").addClass( "pause" );
+	$(".animpage20").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-200%",
@@ -440,7 +444,8 @@ $('#next19').click(function(){
 });
 
 $('#next20').click(function(){
-	
+	$(".animpage20").addClass( "pause" );
+	$(".animpage21").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-300%",
@@ -465,7 +470,8 @@ $('#next20').click(function(){
 
 
 $('#next21').click(function(){
-	
+	$(".animpage21").addClass( "pause" );
+	$(".animpage22").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-400%",
@@ -489,7 +495,8 @@ $('#next21').click(function(){
 });
 
 $('#next22').click(function(){
-	
+	$(".animpage22").addClass( "pause" );
+	$(".animpage23").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-500%",
@@ -513,7 +520,8 @@ $('#next22').click(function(){
 });
 
 $('#next23').click(function(){
-	
+	$(".animpage23").addClass( "pause" );
+	$(".animpage24").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-600%",
@@ -539,7 +547,8 @@ $('#next23').click(function(){
 
 
 $('#prev20').click(function(){
-	
+	$(".animpage20").addClass( "pause" );
+	$(".animpage19").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-100%",
@@ -564,7 +573,8 @@ $('#prev20').click(function(){
 
 
 $('#prev21').click(function(){
-	
+	$(".animpage21").addClass( "pause" );
+	$(".animpage20").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-200%",
@@ -588,7 +598,8 @@ $('#prev21').click(function(){
 });
 
 $('#prev22').click(function(){
-	
+	$(".animpage22").addClass( "pause" );
+	$(".animpage21").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-300%",
@@ -612,7 +623,8 @@ $('#prev22').click(function(){
 });
 
 $('#prev23').click(function(){
-	
+	$(".animpage23").addClass( "pause" );
+	$(".animpage22").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-400%",
@@ -636,7 +648,8 @@ $('#prev23').click(function(){
 });
 
 $('#prev24').click(function(){
-	
+	$(".animpage24").addClass( "pause" );
+	$(".animpage23").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-500%",
@@ -662,18 +675,24 @@ $('#prev24').click(function(){
 
 
   
-	$('#son1').click(function() {
+	$('#son19').click(function() {
 	
-		$('#voix1').pauseMedia();
+		$('#voix19').pauseMedia();
 	});
-	$('#son2').click(function() {
-		$('#voix2').pauseMedia();
+	$('#son20').click(function() {
+		$('#voix20').pauseMedia();
 	});
-	$('#son3').click(function() {
-		$('#voix3').pauseMedia();
+	$('#son21').click(function() {
+		$('#voix21').pauseMedia();
 	});
-	$('#son4').click(function() {
-		$('#voix4').pauseMedia();
+	$('#son22').click(function() {
+		$('#voix22').pauseMedia();
+	});
+	$('#son23').click(function() {
+		$('#voix23').pauseMedia();
+	});
+	$('#son24').click(function() {
+		$('#voix24').pauseMedia();
 	});
 	
 	

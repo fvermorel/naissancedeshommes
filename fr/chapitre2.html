@@ -295,6 +295,8 @@ $("#menu").click(function (){
           });
 
 	$('#next0').click(function(){
+	
+	$(".animpage5").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-100%",
@@ -320,7 +322,8 @@ $("#menu").click(function (){
  
   
 $('#next5').click(function(){
-	
+	$(".animpage5").addClass( "pause" );
+	$(".animpage6").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-200%",
@@ -344,7 +347,8 @@ $('#next5').click(function(){
 });
 
 $('#next6').click(function(){
-	
+	$(".animpage6").addClass( "pause" );
+	$(".animpage7").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-300%",
@@ -368,7 +372,8 @@ $('#next6').click(function(){
 });
 
 $('#next7').click(function(){
-	
+	$(".animpage7").addClass( "pause" );
+	$(".animpage8").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-400%",
@@ -395,7 +400,8 @@ $('#next7').click(function(){
 
 
 $('#prev6').click(function(){
-	
+	$(".animpage6").addClass( "pause" );
+	$(".animpage5").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-400%",
@@ -419,7 +425,8 @@ $('#prev6').click(function(){
 });
 
 $('#prev7').click(function(){
-	
+	$(".animpage7").addClass( "pause" );
+	$(".animpage6").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-500%",
@@ -443,7 +450,8 @@ $('#prev7').click(function(){
 });
 
 $('#prev8').click(function(){
-	
+	$(".animpage8").addClass( "pause" );
+	$(".animpage7").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
     left: "-600%",
@@ -469,18 +477,18 @@ $('#prev8').click(function(){
 
 
   
-	$('#son1').click(function() {
+	$('#son5').click(function() {
 	
-		$('#voix1').pauseMedia();
+		$('#voix5').pauseMedia();
 	});
-	$('#son2').click(function() {
-		$('#voix2').pauseMedia();
+	$('#son6').click(function() {
+		$('#voix6').pauseMedia();
 	});
-	$('#son3').click(function() {
-		$('#voix3').pauseMedia();
+	$('#son7').click(function() {
+		$('#voix7').pauseMedia();
 	});
-	$('#son4').click(function() {
-		$('#voix4').pauseMedia();
+	$('#son8').click(function() {
+		$('#voix8').pauseMedia();
 	});
 	
 	

@@ -26,6 +26,7 @@ body {
 	font-size: 100%;
 	height: 100%;
 	background-color:#000000;
+	margin:0;
 }
 .hidden {
 	visibility: hidden;
@@ -187,9 +188,10 @@ body {
 	line-height:1em;
 }
 #nav {
-    bottom: 5%;
-    height: 10%;
-    left: 47%;
+       bottom: 2%;
+    height: 9.6%;
+    width: 7.2%;
+    left: 46.4%;
     margin-left: 0;
     margin-right: 0;
     overflow: hidden;
@@ -951,5 +953,36 @@ font-size:40px;
 		
 	
 }
-=======
->>>>>>> origin/master:css/style.css
+.bulle {
+	background-image: url("../img/bulle.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 0.55em;
+	z-index: 8;
+	position: absolute;
+	opacity: 0;
+	padding: 3%;
+	width: 9%;
+	height: 4%;
+
+}
+.bullegauche {
+	
+	background-image: url("../img/bulle.png");
+}
+
+.bulledroite {
+	background-image: url("../img/bulledroite.png");
+	
+}
+.pause {
+	-webkit-animation:  pause!important ;
+	-moz-animation:  pause!important;
+	animation:  pause!important;
+	
+}
+.play {
+	animation-play-state:running!important;
+}
