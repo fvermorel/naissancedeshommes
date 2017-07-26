@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/idangerous.swiper.css">
 <link rel="stylesheet" type="text/css" href="css/styleslide.css" />
 <link rel="stylesheet" type="text/css" href="css/a1.css" />
-<link rel="stylesheet" type="text/css" href="css/bulles.css" />
+
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <!--	<script type="text/javascript" src="js/old.js"></script>	
@@ -128,6 +128,10 @@
           Le titan Prométhée prit les hommes en pitié. Il s’était battu contre la tyrannie de Chronos et il avait le coeur juste. Les hommes n’avaient rien pour eux. C’était injuste. Il leur fallait quelque chose ! Discrètement, Prométhée déroba le feu de l’Olympe qu’il dissimula dans un roseau creux. <br>
 Avec le feu, la vie des hommes ne serait pas du tout la même : ils pourraient se chauffer, se défendre contre les bêtes, cuire leurs aliments. Ils pourraient fabriquer des armes en métal et devenir les maîtres de la terre ! Ils étaient les plus misérables des animaux, Prométhée en avait fait les plus redoutables. </div>
         </div>
+        
+          <div id="bulle2BIG">Prométhée est un titan, fils de Japet qui est lui même fils d’Ouranos, le ciel. Ca en fait le cousin de Zeus, comme vous pourrez l’apprendre dans notre livre “L’origine du monde”.</div>
+
+   <div  id="chouette2"></div>
        
           <div class="next"> <img id="next2" src="img/next.png" alt="menu" class="arrow-right" /> </div>
            <div class="prev"> <img id="prev2" src="img/prev.png" alt="menu" class="arrow-left" /></div>
@@ -207,6 +211,9 @@ misérable que celle des vers de terre. Mais il avait gardé le don de prémonit
 
 jour, le fils de Zeus et d’une mortelle viendrait le délivrer...</div>
         </div>
+          <div id="bulle4BIG">Ce fils de Zeus, qui délivrera Prométhée, c’est Héraklès, le plus grand des héros grec, celui qui accomplira les fameux douze travaux.</div>
+
+   <div  id="chouette4"></div>
   
          <div class="prev"> <img id="prev4" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <a href="chapitre2.html"><img id="next4" src="img/next.png" alt="menu" /></a> </div>
@@ -233,7 +240,7 @@ jour, le fils de Zeus et d’une mortelle viendrait le délivrer...</div>
          <div class="imageschapitres">  <a href="chapitre4.html"> <img src="resources/menu4.jpg"  alt=""/> </a></div>
           <div class="imageschapitres"> <a href="chapitre5.html"> <img src="resources/menu5.jpg"  alt=""/> </a></div>
         
-            <div class="imageschapitres"> <a href="coinmalin.html"> <img src="resources/menu7.jpg"  alt=""/> </a></div>
+            <div class="imageschapitres"> <a href="coinmalin.html"> <img src="resources/menu6.jpg"  alt=""/> </a></div>
         
         </div>
 </div>
@@ -495,7 +502,17 @@ $('#prev4').click(function(){
 			}
         });
 	
-	
+	    $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
   </script> 
 <script src="js/encart.js"></script>
 <script src="js/loading.js"></script> 

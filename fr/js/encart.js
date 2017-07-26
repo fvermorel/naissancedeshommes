@@ -11,7 +11,7 @@
 			// Envol de la chouette
 			$('#chouette1').removeClass('atterrissage1').addClass('envol1');
 			// Affichage en fondu lent de la bulle après 2 s d'attente
-			$('#bulle1BIG').delay(2000).fadeIn('slow', 'easeInOutCubic');
+			$('#bulle1BIG').addClass('opacity');
 			
 			// En cas de click sur la chouette...
 			$('#chouette1').click(function() {
@@ -19,7 +19,7 @@
 				// $(this).unbind().removeClass('envol');
 				$(this).unbind().removeClass('envol1').addClass('atterrissage1');
 				// Fondu lent de la bulle
-				$('#bulle1BIG').fadeOut('slow', 'easeInOutCubic');
+				$('#bulle1BIG').removeClass('opacity');
 			});
 		}
 	});
@@ -31,7 +31,7 @@
 			// Envol de la chouette
 			$('#chouette2').removeClass('atterrissage1').addClass('envol2');
 			// Affichage en fondu lent de la bulle après 2 s d'attente
-			$('#bulle2BIG').delay(2000).fadeIn('slow', 'easeInOutCubic');
+			$('#bulle2BIG').addClass('opacity');
 			
 			// En cas de click sur la chouette...
 			$('#chouette2').click(function() {
@@ -39,7 +39,7 @@
 				// $(this).unbind().removeClass('envol');
 				$(this).unbind().removeClass('envol2').addClass('atterrissage1');
 				// Fondu lent de la bulle
-				$('#bulle2BIG').fadeOut('slow', 'easeInOutCubic');
+				$('#bulle2BIG').removeClass('opacity');
 			});
 		}
 	});
@@ -51,7 +51,7 @@
 			// Envol de la chouette
 			$('#chouette3').removeClass('atterrissage1').addClass('envol3');
 			// Affichage en fondu lent de la bulle après 2 s d'attente
-			$('#bulle3BIG').delay(2000).fadeIn('slow', 'easeInOutCubic');
+			$('#bulle3BIG').addClass('opacity');
 			
 			// En cas de click sur la chouette...
 			$('#chouette3').click(function() {
@@ -59,7 +59,7 @@
 				// $(this).unbind().removeClass('envol');
 				$(this).unbind().removeClass('envol3').addClass('atterrissage1');
 				// Fondu lent de la bulle
-				$('#bulle3BIG').fadeOut('slow', 'easeInOutCubic');
+				$('#bulle3BIG').removeClass('opacity');
 			});
 		}
 	});
@@ -71,7 +71,7 @@
 			// Envol de la chouette
 			$('#chouette4').removeClass('atterrissage1').addClass('envol4');
 			// Affichage en fondu lent de la bulle après 2 s d'attente
-			$('#bulle4BIG').delay(2000).fadeIn('slow', 'easeInOutCubic');
+			$('#bulle4BIG').addClass('opacity');
 			
 			// En cas de click sur la chouette...
 			$('#chouette4').click(function() {
@@ -79,7 +79,7 @@
 				// $(this).unbind().removeClass('envol');
 				$(this).unbind().removeClass('envol4').addClass('atterrissage1');
 				// Fondu lent de la bulle
-				$('#bulle4BIG').fadeOut('slow', 'easeInOutCubic');
+				$('#bulle4BIG').removeClass('opacity');
 			});
 		}
 	});
@@ -91,7 +91,7 @@
 			// Envol de la chouette
 			$('#chouette5').removeClass('atterrissage1').addClass('envol5');
 			// Affichage en fondu lent de la bulle après 2 s d'attente
-			$('#bulle5BIG').delay(2000).fadeIn('slow', 'easeInOutCubic');
+			$('#bulle5BIG').addClass('opacity');
 			
 			// En cas de click sur la chouette...
 			$('#chouette5').click(function() {
@@ -99,7 +99,7 @@
 				// $(this).unbind().removeClass('envol');
 				$(this).unbind().removeClass('envol5').addClass('atterrissage1');
 				// Fondu lent de la bulle
-				$('#bulle5BIG').fadeOut('slow', 'easeInOutCubic');
+				$('#bulle5BIG').removeClass('opacity');
 			});
 		}
 	});
@@ -111,7 +111,7 @@
 			// Envol de la chouette
 			$('#chouette6').removeClass('atterrissage1').addClass('envol6');
 			// Affichage en fondu lent de la bulle après 2 s d'attente
-			$('#bulle6BIG').delay(2000).fadeIn('slow', 'easeInOutCubic');
+			$('#bulle6BIG').addClass('opacity');
 			
 			// En cas de click sur la chouette...
 			$('#chouette6').click(function() {
@@ -119,7 +119,7 @@
 				// $(this).unbind().removeClass('envol');
 				$(this).unbind().removeClass('envol6').addClass('atterrissage1');
 				// Fondu lent de la bulle
-				$('#bulle6BIG').fadeOut('slow', 'easeInOutCubic');
+				$('#bulle6BIG').removeClass('opacity');
 			});
 		}
 	});
