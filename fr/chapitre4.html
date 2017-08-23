@@ -49,7 +49,7 @@
 
 
 <div class="swiper-container">
-<div id="retourAccueil"><a href="index.html"><img src="img/home.png"/></a></div>
+<div id="retourAccueil"><a href="../index.html"><img src="img/home.png"/></a></div>
   <div class="swiper-wrapper chapitre1">
   
   <div class="swiper-slide page0" data-hash="slide0">
@@ -100,7 +100,7 @@
               </audio>
             </div>
             <audio id="bruit13" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a13.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/d1.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">L’enlèvement d’Europe</span> <br />
@@ -128,7 +128,6 @@ au­dessus des flots. Les servantes d’Europe poussèrent de grands cris. </div
 
    <div  id="chouette1"></div>
   
-         <div class="prev"> <img id="prev13" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <img id="next13" src="img/next.png" alt="menu" /> </div>
       </div>
     </div>
@@ -153,7 +152,7 @@ au­dessus des flots. Les servantes d’Europe poussèrent de grands cris. </div
               </audio>
             </div>
             <audio id="bruit14" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a14.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/d2.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">La Crète</span> <br />
@@ -201,7 +200,7 @@ son île, devint le maître de toute la Méditerranée. Son histoire vous est ra
               </audio>
             </div>
             <audio id="bruit15" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a15.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/d3.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">La quête de Cadmos</span> <br />
@@ -250,7 +249,7 @@ magnifique vache blanche qui s’enfonça dans les bois. </div>
               </audio>
             </div>
             <audio id="bruit16" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a16.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/d4.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">La fondation de Thèbes</span> <br />
@@ -306,7 +305,7 @@ la ville de Thèbes, une des plus fabuleuses des cités grecques.</div>
               </audio>
             </div>
             <audio id="bruit17" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a17.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/d5.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">La fondation de Troie</span> <br />
@@ -355,7 +354,7 @@ cause de grands tourments que vous lirez dans notre livre “Hercule” </div>
               </audio>
             </div>
             <audio id="bruit18" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a18.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/d6.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">La fondation d’Athènes</span> <br />
@@ -722,6 +721,17 @@ $('#prev18').click(function(){
 		$('#voix18').pauseMedia();
 	});
 	
+	 $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
   </script> 
 <script src="js/encart.js"></script>
 <script src="js/loading.js"></script> 

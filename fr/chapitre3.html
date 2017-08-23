@@ -49,7 +49,7 @@
 
 
 <div class="swiper-container">
-<div id="retourAccueil"><a href="index.html"><img src="img/home.png"/></a></div>
+<div id="retourAccueil"><a href="../index.html"><img src="img/home.png"/></a></div>
   <div class="swiper-wrapper chapitre1">
   
   <div class="swiper-slide page0" data-hash="slide0">
@@ -98,7 +98,7 @@
               </audio>
             </div>
             <audio id="bruit9" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a9.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/c1.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Le roi Lycaon</span> <br />
@@ -124,7 +124,6 @@ les habitants du palais qui étaient complices de ce crime ! </div>
 
    <div  id="chouette1"></div>
   
-         <div class="prev"> <img id="prev9" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <img id="next9" src="img/next.png" alt="menu" /> </div>
       </div>
     </div>
@@ -149,7 +148,7 @@ les habitants du palais qui étaient complices de ce crime ! </div>
               </audio>
             </div>
             <audio id="bruit10" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a10.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/c2.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Colère de Zeus</span> <br />
@@ -196,7 +195,7 @@ hommes. </div>
               </audio>
             </div>
             <audio id="bruit11" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a11.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/c3.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Les justes</span> <br />
@@ -248,7 +247,7 @@ pitié. Il décida de les épargner. Enchaîné sur son rocher, Prométhée sut 
               </audio>
             </div>
             <audio id="bruit12" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a12.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/c4.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Renaissance des hommes</span> <br />
@@ -288,7 +287,6 @@ une femme qui naissait de la poussière. L’humanité renaissait. </div>
     
     
     
-    <!-- Fin page 24--> 
     
   </div>
   <div class="pagination"></div>
@@ -515,7 +513,17 @@ $('#prev12').click(function(){
 		$('#voix12').pauseMedia();
 	});
 	
-	
+	 $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
   </script> 
 <script src="js/encart.js"></script>
 <script src="js/loading.js"></script> 

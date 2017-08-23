@@ -49,7 +49,7 @@
 
 
 <div class="swiper-container">
-<div id="retourAccueil"><a href="index.html"><img src="img/home.png"/></a></div>
+<div id="retourAccueil"><a href="../index.html"><img src="img/home.png"/></a></div>
   <div class="swiper-wrapper chapitre1">
   
   <div class="swiper-slide page0" data-hash="slide0">
@@ -98,7 +98,7 @@
               </audio>
             </div>
             <audio id="bruit19" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a19.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/e1.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">L’olivier</span> <br />
@@ -122,7 +122,6 @@ Athènes et adoptèrent la chouette, l’animal sacré d’Athéna, comme emblê
 
    <div  id="chouette1"></div>
   		
-         <div class="prev"> <img id="prev19" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <img id="next19" src="img/next.png" alt="menu" /> </div>
       </div>
     </div>
@@ -147,7 +146,7 @@ Athènes et adoptèrent la chouette, l’animal sacré d’Athéna, comme emblê
               </audio>
             </div>
             <audio id="bruit20" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a20.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/e2.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Orphée</span> <br />
@@ -196,7 +195,7 @@ argonautes”. </div>
               </audio>
             </div>
             <audio id="bruit21" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a21.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/e3.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">La descente aux enfers</span> <br />
@@ -243,7 +242,7 @@ n’avait pas le droit de regarder derrière lui ni de s’occuper de son épous
               </audio>
             </div>
             <audio id="bruit22" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a22.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/e4.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Le retour des enfers</span> <br />
@@ -294,7 +293,7 @@ musique. </div>
               </audio>
             </div>
             <audio id="bruit23" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a23.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/e5.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Asclépios</span> <br />
@@ -346,7 +345,7 @@ constellation. Depuis ce jour, Asclépios est le dieu des médecins. </div>
               </audio>
             </div>
             <audio id="bruit24" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a24.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/e6.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Conclusion</span> <br />
@@ -706,7 +705,17 @@ $('#prev24').click(function(){
 		$('#voix24').pauseMedia();
 	});
 	
-	
+	 $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
   </script> 
 <script src="js/encart.js"></script>
 <script src="js/loading.js"></script> 

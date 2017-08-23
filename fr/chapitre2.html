@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/idangerous.swiper.css">
 <link rel="stylesheet" type="text/css" href="css/styleslide.css" />
 <link rel="stylesheet" type="text/css" href="css/a1.css" />
-<link rel="stylesheet" type="text/css" href="css/nuages.css" />
+
 <script type="text/javascript" src="js/jquery.js"></script>
 <!--	<script type="text/javascript" src="js/old.js"></script>	
 		<script type="text/javascript" src="js/book.js"></script> 	-->
@@ -49,7 +49,7 @@
 
 
 <div class="swiper-container">
-<div id="retourAccueil"><a href="index.html"><img src="img/home.png"/></a></div>
+<div id="retourAccueil"><a href="../index.html"><img src="img/home.png"/></a></div>
   <div class="swiper-wrapper chapitre1">
   
   <div class="swiper-slide page0" data-hash="slide0">
@@ -98,7 +98,7 @@
               </audio>
             </div>
             <audio id="bruit5" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a5.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/b1.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Pandora</span> <br />
@@ -122,7 +122,6 @@ une créature merveilleuse et irrésistible. Zeus allait s’en servir pour le m
 
    <div  id="chouette1"></div>
   
-         <div class="prev"> <img id="prev5" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <img id="next5" src="img/next.png" alt="menu" /> </div>
       </div>
     </div>
@@ -147,7 +146,7 @@ une créature merveilleuse et irrésistible. Zeus allait s’en servir pour le m
               </audio>
             </div>
             <audio id="bruit6" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a6.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/b2.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">Le premier mariage</span> <br />
@@ -196,7 +195,7 @@ heureux. </div>
               </audio>
             </div>
             <audio id="bruit7" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a7.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/b3.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">La curiosité est un vilain défaut</span> <br />
@@ -243,7 +242,7 @@ effrayée, voulut refermer la jarre. Mais le dernier oiseau s’échappa : Il s�
               </audio>
             </div>
             <audio id="bruit8" preload="auto" autostart="false" type="audio/mpeg">
-              <source src="son/a8.mp3" autostart="false" type="audio/mpeg"  >
+              <source src="son/b4.mp3" autostart="false" type="audio/mpeg"  >
             </audio>
           </div>
           <div class="texte"> <span class="titre">L'espérance</span> <br />
@@ -413,7 +412,7 @@ $('#prev6').click(function(){
 	$(".animpage5").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
-    left: "-400%",
+    left: "-100%",
 
   }, 500, function() {
     // Animation complete.
@@ -438,7 +437,7 @@ $('#prev7').click(function(){
 	$(".animpage6").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
-    left: "-500%",
+    left: "-200%",
 
   }, 500, function() {
     // Animation complete.
@@ -463,7 +462,7 @@ $('#prev8').click(function(){
 	$(".animpage7").removeClass( "pause" );
 		$( ".swiper-wrapper" ).animate({
   
-    left: "-600%",
+    left: "-300%",
 
   }, 500, function() {
     // Animation complete.
@@ -500,7 +499,17 @@ $('#prev8').click(function(){
 		$('#voix8').pauseMedia();
 	});
 	
-	
+	 $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
   </script> 
 <script src="js/encart.js"></script>
 <script src="js/loading.js"></script> 
