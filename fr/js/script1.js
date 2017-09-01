@@ -55,13 +55,13 @@
 
           });
 		  
-		    $(".son").click(function (){
+		   /* $(".son").click(function (){
 
         
 
           $(".son").toggleClass("sonhover");
 
-          });
+          });*/
 	
 	
 	 $("#menu").click(function (){

@@ -123,7 +123,7 @@ les habitants du palais qui étaient complices de ce crime ! </div>
         <div id="bulle1BIG">Chez les grecs, le devoir de l’hospitalité est sacré : un voyageur doit être bien accueilli et bien nourri. Il est donc interdit de lui servir ses enfants comme repas !</div>
 
    <div  id="chouette1"></div>
-  
+  <div class="prev"> <img id="prev9" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <img id="next9" src="img/next.png" alt="menu" /> </div>
       </div>
     </div>
@@ -416,7 +416,22 @@ $('#next11').click(function(){
 });
 
 
-
+$('#prev9').click(function(){
+	$(".animpage9").addClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+    left: "0%",
+  }, 500, function() {
+    // Animation complete.
+  });
+			$('#bruit9').pauseMedia();
+		$('#voix9').pauseMedia();
+		   
+		   var video9 = $('#videotest9');
+	         	
+           video9[0].pause();
+		 	  
+           return false;
+});
 
 
 $('#prev10').click(function(){
@@ -499,19 +514,54 @@ $('#prev12').click(function(){
 
 
   
-	$('#son9').click(function() {
-	
-		$('#voix9').pauseMedia();
-	});
-	$('#son10').click(function() {
-		$('#voix10').pauseMedia();
-	});
-	$('#son11').click(function() {
-		$('#voix11').pauseMedia();
-	});
-	$('#son12').click(function() {
-		$('#voix12').pauseMedia();
-	});
+  	$play9 = true;
+	  	$play10 = true;
+	  	$play11 = true;
+	  	$play12 = true;
+		$('#son9').click(function() {
+			$("#son9").toggleClass("sonhover");
+			if ($play9) {
+		        $('#voix9').pauseMedia();
+		        $play9 = false;
+			}
+			else {
+				$('#voix9').playMedia();
+				$play9 = true;
+			}
+        });
+		$('#son10').click(function() {
+			$("#son10").toggleClass("sonhover");
+			if ($play10) {
+		        $('#voix10').pauseMedia();
+		        $play10 = false;
+			}
+			else {
+				$('#voix10').playMedia();
+				$play10 = true;
+			}
+        });
+		$('#son11').click(function() {
+			$("#son11").toggleClass("sonhover");
+			if ($play11) {
+		        $('#voix11').pauseMedia();
+		        $play11 = false;
+			}
+			else {
+				$('#voix11').playMedia();
+				$play11 = true;
+			}
+        });
+		$('#son12').click(function() {
+			$("#son12").toggleClass("sonhover");
+			if ($play12) {
+		        $('#voix12').pauseMedia();
+		        $play12 = false;
+			}
+			else {
+				$('#voix12').playMedia();
+				$play12 = true;
+			}
+        });
 	
 	 $("#menu").click(function (){
 

@@ -121,7 +121,7 @@ une créature merveilleuse et irrésistible. Zeus allait s’en servir pour le m
          <div id="bulle1BIG">L’histoire de Pandora et d’Epiméthée ressemble beaucoup à celle d’Adam et Eve. Dans les deux cas, la femme est créée après l’homme.</div>
 
    <div  id="chouette1"></div>
-  
+   <div class="prev"> <img id="prev5" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <img id="next5" src="img/next.png" alt="menu" /> </div>
       </div>
     </div>
@@ -214,7 +214,7 @@ oiseaux terribles. Ils s’envolèrent dans les airs et depuis ils accompagnent 
 
 effrayée, voulut refermer la jarre. Mais le dernier oiseau s’échappa : Il s’appelle l’Espérance.</div>
         </div>
-  <div id="bulle3BIG">Si tu visite les musées où sont exposés des objets grecs anciens, tu verras beaucoup de jarres et d’amphores. Les anciens s’en servaient pour stocker les aliments, l’huile, le vin...</div>
+  <div id="bulle3BIG">Si tu visites les musées où sont exposés des objets grecs anciens, tu verras beaucoup de jarres et d’amphores. Les anciens s’en servaient pour stocker les aliments, l’huile, le vin...</div>
 
    <div  id="chouette3"></div>
          <div class="prev"> <img id="prev7" src="img/prev.png" alt="menu" class="arrow-left" /></div>
@@ -405,6 +405,22 @@ $('#next7').click(function(){
 });
 
 
+$('#prev5').click(function(){
+	$(".animpage5").addClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+    left: "0%",
+  }, 500, function() {
+    // Animation complete.
+  });
+			$('#bruit5').pauseMedia();
+		$('#voix5').pauseMedia();
+		   
+		   var video5 = $('#videotest5');
+	         	
+           video5[0].pause();
+		 	  
+           return false;
+});
 
 
 $('#prev6').click(function(){

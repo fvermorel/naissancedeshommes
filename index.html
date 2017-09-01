@@ -16,7 +16,7 @@
 <!-- script rindra -->
  <script type="text/javascript" src="fr/js/script.js"></script>
  
- 
+ <script src="cordova.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="fr/css/style.css" />
         <link rel="apple-touch-icon" href="fr/iconoracle.png" />
@@ -30,7 +30,23 @@
 	font-family: "Offside";
 	src: url(fr/img/Offside-Regular.ttf);
 }
+  @font-face {
+	font-family: "Lucida Grande";
+	src: url(fr/img/LucidaGrande.ttc);
+}
+@font-face {
+	font-family: "EccentricStd";
+	src: url(fr/img/EccentricStd.otf);
+}
+
+@font-face{
+	font-family: "Offside-Regular";
+	src: url(fr/img/Offside-Regular.ttf);
+}
   
+  body {
+	  font-family: "Offside-Regular";
+  }
         #autreslivres {
     background-color: rgba(223, 233, 235, 0.7);
     border-radius: 10px;
@@ -293,6 +309,10 @@ background-image: url(img/btn-ouvrir.png);
   height: 768px;
  
   text-align: center;
+}
+
+.presentationlivre a{
+	margin-bottom:10px;
 }
 
         </style>

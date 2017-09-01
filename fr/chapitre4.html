@@ -127,7 +127,7 @@ au­dessus des flots. Les servantes d’Europe poussèrent de grands cris. </div
         <div id="bulle1BIG">Tu as bien compris : si, dans un champ, tu croises un taureau, surtout n’essaie pas de monter dessus. Tu ne sais pas ce qu’il pourrait t’arriver !</div>
 
    <div  id="chouette1"></div>
-  
+  <div class="prev"> <img id="prev13" src="img/prev.png" alt="menu" class="arrow-left" /></div>
         <div class="next"> <img id="next13" src="img/next.png" alt="menu" /> </div>
       </div>
     </div>
@@ -573,6 +573,23 @@ $('#next17').click(function(){
 });
 
 
+$('#prev13').click(function(){
+	$(".animpage13").addClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+    left: "0%",
+  }, 500, function() {
+    // Animation complete.
+  });
+			$('#bruit13').pauseMedia();
+		$('#voix13').pauseMedia();
+		   
+		   var video13 = $('#videotest13');
+	         	
+           video13[0].pause();
+		 	  
+           return false;
+});
+
 
 $('#prev14').click(function(){
 	$(".animpage14").addClass( "pause" );
@@ -701,25 +718,81 @@ $('#prev18').click(function(){
 
 
   
-	$('#son13').click(function() {
 	
-		$('#voix13').pauseMedia();
-	});
-	$('#son14').click(function() {
-		$('#voix14').pauseMedia();
-	});
-	$('#son15').click(function() {
-		$('#voix15').pauseMedia();
-	});
-	$('#son16').click(function() {
-		$('#voix16').pauseMedia();
-	});
-	$('#son17').click(function() {
-		$('#voix17').pauseMedia();
-	});
-	$('#son18').click(function() {
-		$('#voix18').pauseMedia();
-	});
+  	$play13 = true;
+	  	$play14 = true;
+	  	$play15 = true;
+	  	$play16 = true;
+		$play17 = true;
+	  	$play18 = true;
+		$('#son13').click(function() {
+			$("#son13").toggleClass("sonhover");
+			if ($play13) {
+		        $('#voix13').pauseMedia();
+		        $play13 = false;
+			}
+			else {
+				$('#voix13').playMedia();
+				$play13 = true;
+			}
+        });
+		$('#son14').click(function() {
+			$("#son14").toggleClass("sonhover");
+			if ($play14) {
+		        $('#voix14').pauseMedia();
+		        $play14 = false;
+			}
+			else {
+				$('#voix14').playMedia();
+				$play14 = true;
+			}
+        });
+		$('#son15').click(function() {
+			$("#son15").toggleClass("sonhover");
+			if ($play15) {
+		        $('#voix15').pauseMedia();
+		        $play15 = false;
+			}
+			else {
+				$('#voix15').playMedia();
+				$play15 = true;
+			}
+        });
+		$('#son16').click(function() {
+			$("#son16").toggleClass("sonhover");
+			if ($play16) {
+		        $('#voix16').pauseMedia();
+		        $play16 = false;
+			}
+			else {
+				$('#voix16').playMedia();
+				$play16 = true;
+			}
+        });
+		
+		$('#son17').click(function() {
+			$("#son17").toggleClass("sonhover");
+			if ($play17) {
+		        $('#voix17').pauseMedia();
+		        $play17 = false;
+			}
+			else {
+				$('#voix17').playMedia();
+				$play17 = true;
+			}
+        });
+		$('#son18').click(function() {
+			$("#son18").toggleClass("sonhover");
+			if ($play18) {
+		        $('#voix18').pauseMedia();
+		        $play18 = false;
+			}
+			else {
+				$('#voix18').playMedia();
+				$play18 = true;
+			}
+        });
+	
 	
 	 $("#menu").click(function (){
 

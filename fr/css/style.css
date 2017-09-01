@@ -14,7 +14,7 @@
 
 h2 {
 	text-align:center;
-	font-family:verdana;
+	font-family: "EccentricStd";
 	color:#f2569d;
 	border-bottom-style:dotted;
 	border-bottom-color:#f2569d;
@@ -742,6 +742,7 @@ canvas {
 .iconelivre img{
 	width:100%;
 	height:100%;
+	padding-top:10px;
 	
 }
 
@@ -775,7 +776,7 @@ a {
 	float:left;
 	color: #f2569d;
 	font-size:1.1em;
-	font-family:verdana;
+	font-family: "Offside-Regular";
 	margin-bottom:5%;
 	
 }
@@ -801,7 +802,7 @@ width: 30%;
 }
 .bibliographie {
 
-	font-family:verdana;
+	font-family: "Offside-Regular";
 	    color: #3A2719;
 		clear:both;
 		padding-top:20px;

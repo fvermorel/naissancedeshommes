@@ -95,7 +95,7 @@
             ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ <br />
          Au milieu des lions, des gazelles, des poissons et des oiseaux, les hommes faisaient peine à voir. Ni griffe, ni crocs pour se défendre ou attaquer. Pas de fourrure non plus pour se protéger du froid. Incapable de courir vite pour éviter le danger non plus que de s’envoler dans les airs. Ils ne savaient pas non plus nager comme des poissons ni creuser des terriers comme des lapins. Les hommes avançaient nus, grelottant de froid. Ils devaient fouiller la terre pour manger des racines. Les lions, les loups et toutes les autres bêtes féroces n’en faisaient qu’une bouchée. Une créature aussi chétive, aussi fragile, aussi démunie, comment pourrait-elle survivre ?</div>
         </div>
-       
+       <div class="prev"> <img id="prev1" src="img/prev.png" alt="menu" class="arrow-left" /></div>
           <div class="next"> <img id="next1" src="img/next.png" alt="menu" class="arrow-right" /> </div>
           
       </div>
@@ -364,7 +364,22 @@ $('#next3').click(function(){
 
 
 
-
+$('#prev1').click(function(){
+	$(".animpage1").addClass( "pause" );
+		$( ".swiper-wrapper" ).animate({
+    left: "0%",
+  }, 500, function() {
+    // Animation complete.
+  });
+			$('#bruit1').pauseMedia();
+		$('#voix1').pauseMedia();
+		   
+		   var video1 = $('#videotest1');
+	         	
+           video1[0].pause();
+		 	  
+           return false;
+});
 
 
 
