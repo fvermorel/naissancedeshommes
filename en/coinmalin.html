@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="stylesheet" href="../fr/css/idangerous.swiper.css">
+  <script type="text/javascript" src="../fr/js/jquery.js"></script>
+<!--	<script type="text/javascript" src="../fr/js/old.js"></script>	
+		<script type="text/javascript" src="../fr/js/book.js"></script> 	-->
+<!--	Plugin jQuery pour animations basées sur courbe de Bézier (ex : sinusoïde) -->
+<!--<script src="../fr/js/jquery.path.js"></script>
+<script src="../fr/js/jquery-ui.min.js"></script>-->
+<!--	API CCom Interactive -->
+<script src="../fr/js/ccom.js"></script>
+<script type="text/javascript" src="../fr/js/encart.js"></script>
+<script type="text/javascript" src="../fr/js/script1.js"></script>
+<link rel="stylesheet" href="../fr/loader.css">
+<script type="text/javascript" src="../fr/loader.js"></script>
+  <style>
+/* Demo Styles */
+
+@font-face {
+	font-family: "Lucida Grande";
+	src: url(../img/LucidaGrande.ttc);
+}
+@font-face {
+	font-family: "EccentricStd";
+	src: url(../img/EccentricStd.otf);
+}
+
+@font-face{
+	font-family: "Offside-Regular";
+	src: url(../img/Offside-Regular.ttf);
+}
+
+body {
+	margin: 0;
+	font-family: "Offside-Regular";
+	font-size: 13px;
+}
+.swiper-container {
+    color: #FFFFFF;
+    height: 668px;
+    left: 5%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 90%;
+	}
+.white-slide {
+	background: #fff;
+}
+.swiper-slide {
+	margin-bottom: 0;
+	width: 100%;
+}
+.pagination {
+	position: absolute;
+	z-index: 100;
+	left: 10px;
+	bottom: 10px;
+}
+.swiper-pagination-switch {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #222;
+	margin-right: 5px;
+	opacity: 0.8;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.swiper-visible-switch {
+	background: #aaa;
+}
+.swiper-active-switch {
+	background: #fff;
+}
+.tabs {
+    left: 10%;
+    position: absolute;
+    top: 5%;
+    width: 900px;}
+.tabs a {
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    float: left;
+    font-family: offside-regular;
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0.8;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+	}
+.tabs a.active {
+}
+#background img.coinmalin {
+	z-index: -1;
+}
+.colonnetexte {
+	width: 25%;
+	position: absolute;
+	color: #000;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+	overflow-y: auto;
+	height: 100%;
+	z-index: 2;
+}
+.colonnetextefull {
+	width: 94%;
+	position: absolute;
+	color: #000;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: left;
+	overflow-y: auto;
+	height: 100%;
+	z-index: 2;
+}
+.colonnetexte2 {
+	width: 25%;
+	position: absolute;
+	color: #000;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+	overflow-y: auto;
+	height: 100%;
+}
+.colonneslide {
+	width: 65%;
+	position: absolute;
+	left: 35%;
+}
+.bonus {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.bonus .swiper-wrapper {
+	width: 65%!important;
+}
+.bonus .swiper-wrapper .swiper-slide {
+	min-height: 100px!important;
+}
+.bonus .swiper-wrapper .swiper-slide img {
+	width: 100%;
+}
+h1 {
+	font-size: 18px;
+	text-align: center;
+}
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+}
+      
+h6 {
+    font-size: 10px;
+    font-weight:300;
+    font-style: italic;
+}      
+.violet {
+    color: #800080;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+	
+	
+.violet.active{
+	background-color:#800080;
+    color:#fff;
+	opacity:1;
+}
+
+.rose {
+    color:#F3C;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+
+
+.rose.active{
+	background-color:#F3C;
+    color:#fff;
+	opacity:1;
+}
+
+.vert {
+    color:#3C9;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+.vert.active{
+	background-color:#3C9;
+    color:#fff;
+	opacity:1;
+}
+
+.orange {
+    color:#F90;
+    font-family: "EccentricStd";
+    font-size: 26px;
+    font-weight: lighter;
+	letter-spacing: 0.05em;}
+.orange.active{
+	background-color:#F90;
+    color:#fff;
+	opacity:1;
+}
+
+.texteslide {
+	width: 30%;
+	padding-right: 3%;
+	float: left;
+}
+.imageslide {
+	width: 66%;
+	float: left;
+}
+.imageslide img {
+    border: 1px solid #000;
+    width: 100%;
+	margin-bottom:25px;
+	}
+.clear {
+	clear: both;
+}
+
+#wrapper {
+	  width: 1024px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  height: 768px;
+	
+}
+</style>
+  <link rel="stylesheet" type="text/css" href="../fr/css/style.css" />
+  </head>
+  <body>
+  
+<div id="wrapper">
+	<div id="retourAccueil"><a href="../index_en.html"><img src="../fr/img/home.png"/></a></div>
+
+	<div id="background" ><!-- ici seront chargés les background des pages --> 
+    <img id="page" src="../fr/resources/couv.jpg" class="coinmalin" /> </div>
+	<div class="tabs"> <a href="#" class="violet">Art history</a> <a href="#" class="rose" >History</a> <a href="#" class="vert">Sciences</a> <a href="#" class="orange">Glossary</a> </div>
+<!--------------------------------------------------------------------------->
+<div class="swiper-container swiper-parent" style="clear:both;">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1 class="violet">Prometheus</h1>
+            <p> Father of mankind, Prometheus is a very important person. He is both mankinds’ friend and he is destined to suffer because of his pride. </p>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">5th century BC Cup</h2>
+                <p>Prometheus in company of the goddess Hera who is the wife of Zeus and the keeper of the household. </p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-a.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">“The myth of Prometheus”</h2>
+                <p> of Piero di Cosimo, 1520. Museum de Beaux-Arts of Strasbourg.: Prometheus is the creator and accompanies men in their daily tasks.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-b.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">“Prometheus Suffering”</h2>
+                <p> from Pierre Paul Rubens 1612. Philadelphia Museum of Art, Philadelphia. Prometheus seems enormous and is suffering horribly. </p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-c.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">Prometheus</h2>
+                <p> Theodor Rombouts, Prometheus, early 17th century, royal museum of fine arts of Belgium. Similar to Rubens, the accent is placed on the suffering of Prometheus.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-d.jpg" ></div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">Prometheus Chained</h2>
+                <p>Nicolas Sebastien Adam – 1762 Paris, Louvre Museum.  Based on this marble sculpture, considered one of the great works of the 18th century, the artist was admitted the Academy.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-e.jpg" > </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">Prometheus </h2>
+                <p>of Gustave Moreau, 1868, shown at the Gustave Moreau Museum in Paris. Here, Prometheus looks like an everyday man and isn’t even noticing the eagle eating his liver. Only the flame above his head hints to his supernatural mission.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"><img src="../fr/bonus/1-f.jpg" > </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">Rockefeller Center</h2>
+                <p>Paul Manship, 1933. For the Rockefeller Center in New York, the artist created a gilded bronze statue more than 6 meters tall and that weighs more than 8 tons.
+</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-g.jpg" ></div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">Promoetheus</h2>
+                <p>Arno Breker, 1935. For the sculptor, Prometheus represents strength and virility.
+</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-h.jpg" > </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">Chernobyl</h2>
+                <p>First on the central square of Pripyat, the statue of Prometheus was moved in front of the nuclear complex after the terrible nuclear accident in 1986.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/1-i.jpg" ></div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="violet">Prometheus</h2>
+                <p>of Ridley Scott 2012. In this science fiction film, “Prometheus” is a star ship that transports humans to another planet.
+</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <<img src="../fr/bonus/1-j.jpg" ></div>
+          </div>
+          
+          </div>
+      </div>
+      </div>
+    <!--début du slide-->
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1 class="rose"> The prehistoric men</h1>
+            <p> Today, we know that human beings were not created by gods. They have evolved and descend from species of monkeys who have since disappeared. And to arrive at the humans we think of nowadays, there were many interim steps.</p>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Lucy</h2>
+                <p> Lucy is 3.2 million years old. It is the name given to a skeleton found in 1974 and which has long been considered been the most ancient known human. She belongs to the species of Australopithecus. She was approximately 25 years old and measured 1m10 and 1m20. Source Wikipedia: Reconstitution of Lucy in the National Museum of Nature and Sciences of Tokyo.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/2-a.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Homo Habilis</h2>
+                <p> Homo Habilis lived between 2.5 and 1.5 million years ago. We attribute the first tools to him. </p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/2-b.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Homo Erectus</h2>
+                <p> He lived between 1.5 million years ago to roughly 100,000 years ago. He owes his name due to the fact he stood upright on his two feet.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/2-c.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Neanderthal</h2>
+                <p> He lived between 250,000 and 28,000 years ago. Less intelligent than Homo Sapiens, he was not able to adapt to climactic changes and eventually disappeared.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/2-d.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Cro Magnon</h2>
+                <p> The Cro-Magnon is the cave man. We descend directly from him</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/2-e.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="rose">Homo Sapiens</h2>
+                <p>  It is the Human being as we know it. It is your mom and dad, and it is you.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/2-f.jpg" > </div>
+          </div>
+            
+          </div>
+      </div>
+      </div>
+    
+    <!--fin du slide--> 
+    <!--début du slide-->
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1 class="vert">Agriculture</h1>
+            <p> Our history tells us how men learned agriculture which consists in growing vegetable for food.</p>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Growing cereals</h2>
+                <p> Cereals are plants that are grown exclusively for their grains. Examples are: wheat, corn, rice... Cereals today represent 45% of the calories eaten by humans.</p>
+                <h6>©Wikipedia</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/3-a.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Gardens</h2>
+                <p> In a garden, we grow plants utilized for food. These are legumes. For example: cabbage, potatoes, zucchinis, etc.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/3-b.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Growing Fruit Trees</h2>
+                <p> In a plant, a flower turns into fruits. Many fruits, but not all, grow on trees. They are often sweet and eaten for desert. For example apples, peach apricots.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/3-c.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Traditional Agriculture</h2>
+                <p> In many regions of the world, agriculture has not evolved in centuries. It suffers often from a lower yield than industrial agriculture but it is more respectful of the environment.</p>
+                <h6>Agriculture in Madagascar</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/3-d.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Intensive agriculture</h2>
+                <p>  Intensive agriculture seeks to greatly improve the profitability and produce more with less workers. It allows us to nourish a human population that is ever growing but it is otherwise very bad for the environment. It utilizes many polluting machines, chemical fertilizers and pesticides,</p>
+                <h6>D.R</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/3-e.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Biological Agriculture</h2>
+                <p> Biological agriculture does not use chemical fertilizers or biologically modified organisms. It is better for one’s health and is better for the environment than intensive agriculture. But it costs more and the consumers must pay more.
+
+</p>
+                <h6>Vegetables grown from Biological Agriculture</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/3-f.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="vert">Urban Agriculture</h2>
+                <p> In developed countries, many people lives in cities and can’t have a garden. More and more people developed a new form of agriculture developed for the urban environment.</p>
+                <h6>Grapevine growing vertically on the façade of a house</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/3-g.jpg" > </div>
+          </div>
+          </div>
+      </div>
+      </div>
+    
+    <!--fin du slide--> 
+    <!--début du slide-->
+    <div class="swiper-slide white-slide">
+        <div class="bonus">
+        <div class="colonnetextefull">
+            <h1  class="orange">Glossary</h1>
+              <p> Who's who ?</p>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Agenor</h2>
+                <p> Agenor is the king of Sidon. He is the son of the god Poseidon and a mortal named Lybia who is in turn, the daughter of the river Nile.</p>
+                
+              </div>
+            <div class="imageslide"> </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Aphrodite</h2>
+                <p> Aphrodite is the goddess of beauty and love. She is born when Chronos cut a piece of flesh of Ouranos (Uranus). Her story is told in our book “the Origin of the World.”</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/aphrodite.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Apollon</h2>
+                <p> Appolon is the god of art, singing and poetry. He is the son of Zeus the goddess Leto.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/apollon.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Athena</h2>
+                <p>Athena is the goddess of wisdom. She is the daughter of Zeus and the goddess Metis.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/athena.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Bacchants </h2>
+                <p> The Bacchants are the servants of the god Dionysus. They are often irritated and it is best not to aggravate them.
+
+ </p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Calliope </h2>
+                <p>Calliope is the goddess of epic poetry. She is one of the nine muses, the goddesses of Art. She has 8 sisters and those are the daughters of Zeus and Mnemosyne, the goddess of memory.
+</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Chiron </h2>
+                <p>Chiron is a centaur, a creature half man and half horse. He has brought up many heroes and even some gods.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/chiron.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Chronos </h2>
+                <p>Chronos is the god of Time, the son of Ouranos, god of the Sky and Gaia, goddess of the Earth. He was king of the world before Zeus chased him away. You can read his story in our book: “the Origin of the World”.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Aeolus</h2>
+                <p> Aeolus is the god of the winds. Some say he is the son of Poseidon the god of the seas.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/eole.jpg" > </div>
+          </div>
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Hades </h2>
+                <p>Hades is the brother of Zeus and Poseidon. It’s the god of hell, the underground world where people go after their death.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Héphaistos </h2>
+                <p>Hephaistos is the god of artisans and smiths. He is the son of Zeus and his wife Hera.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+          
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Hera </h2>
+                <p>Hera is a goddess and the wife of Zeus, king of gods.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide">  </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Hermes</h2>
+                <p>Hermes is the god of storekeepers and thieves. He is the son of Zeus and a goddess called Maia. </p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/hermes.jpg" > </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Poseidon </h2>
+                <p>Poseidon is the god of the sea and the brother of Zeus.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/poseidon.jpg" > </div>
+          </div>
+          
+            <div class="clear">
+            <div class="texteslide">
+                <h2 class="orange">Zeus</h2>
+                <p>He is the king of world and the son of Chronos. He is married with the goddess Hera. But he often falls in love with other women, whether mortal or goddesses and he has many, many children.</p>
+                <h6>D.R.</h6>
+              </div>
+            <div class="imageslide"> <img src="../fr/bonus/zeus.jpg" > </div>
+          </div>
+          
+          </div>
+      </div>
+      </div>
+  </div>
+  </div>
+   <div id="nav">
+    <div id="menu"> <img id="menuImg" src="../fr/img/menu.png" alt="menu" /> </div>
+  </div>
+  <div class="popup chapitres">
+        <div class="croixfermeture chapitresfermer"><img src="../fr/img/croix.png"  alt=""/></div>
+        <h2>L'histoire</h2>
+       <div class="imageschapitres">  <a href="chapitre1.html"> <img src="../fr/resources/menu1.jpg" class=""  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="chapitre2.html"> <img src="../fr/resources/menu2.jpg"  alt=""/> </a></div>
+           <div class="imageschapitres"><a href="chapitre3.html"> <img src="../fr/resources/menu3.jpg"  alt=""/> </a></div>
+         <div class="imageschapitres">  <a href="chapitre4.html"> <img src="../fr/resources/menu4.jpg"  alt=""/> </a></div>
+          <div class="imageschapitres"> <a href="chapitre5.html"> <img src="../fr/resources/menu5.jpg"  alt=""/> </a></div>
+        
+            <div class="imageschapitres"> <a href="coinmalin.html"> <img src="../fr/resources/menu6.jpg"  alt=""/> </a></div>
+        
+        </div>
+  
+  
+</div>
+<script src="../fr/js/jquery-1.10.1.min.js"></script> 
+<script src="../fr/js/idangerous.swiper-2.1.min.js"></script> 
+<script>
+  var tabsSwiper = new Swiper('.swiper-container',{
+   
+    speed:500,
+  })
+  $(".tabs a").on('touchstart mousedown',function(e){
+    e.preventDefault()
+    $(".tabs .active").removeClass('active')
+    $(this).addClass('active')
+    tabsSwiper.swipeTo( $(this).index() )
+  })
+  $(".tabs a").click(function(e){
+    e.preventDefault()
+  })
+  
+  var swiperParent = new Swiper('.swiper-parent',{
+  
+    paginationClickable: true,
+    slidesPerView: 1,
+  })
+   var swiperNested1 = new Swiper('.swiper-nested-0',{
+    mode: 'vertical',
+ 
+    paginationClickable: true,
+  slidesPerView: 'auto',
+  })
+  var swiperNested1 = new Swiper('.swiper-nested-1',{
+    mode: 'vertical',
+  
+    paginationClickable: true,
+  slidesPerView: 'auto',
+  })
+  var swiperNested2 = new Swiper('.swiper-nested-2',{
+    mode: 'vertical',
+
+    paginationClickable: true,
+    slidesPerView: 'auto',
+  })
+   var swiperNested2 = new Swiper('.swiper-nested-3',{
+    mode: 'vertical',
+
+    paginationClickable: true,
+    slidesPerView: 'auto',
+  })
+  
+   $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+  </script>
+</body>
+</html>
