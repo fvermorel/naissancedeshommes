@@ -501,19 +501,55 @@ $('#prev8').click(function(){
 
 
   
-	$('#son5').click(function() {
-	
-		$('#voix5').pauseMedia();
-	});
-	$('#son6').click(function() {
-		$('#voix6').pauseMedia();
-	});
-	$('#son7').click(function() {
-		$('#voix7').pauseMedia();
-	});
-	$('#son8').click(function() {
-		$('#voix8').pauseMedia();
-	});
+
+  	$play5 = true;
+	  	$play6 = true;
+	  	$play7 = true;
+	  	$play8 = true;
+		$('#son5').click(function() {
+			$("#son5").toggleClass("sonhover");
+			if ($play5) {
+		        $('#voix5').pauseMedia();
+		        $play5 = false;
+			}
+			else {
+				$('#voix5').playMedia();
+				$play5 = true;
+			}
+        });
+		$('#son6').click(function() {
+			$("#son6").toggleClass("sonhover");
+			if ($play6) {
+		        $('#voix6').pauseMedia();
+		        $play6 = false;
+			}
+			else {
+				$('#voix6').playMedia();
+				$play6 = true;
+			}
+        });
+		$('#son7').click(function() {
+			$("#son7").toggleClass("sonhover");
+			if ($play7) {
+		        $('#voix7').pauseMedia();
+		        $play7 = false;
+			}
+			else {
+				$('#voix7').playMedia();
+				$play7 = true;
+			}
+        });
+		$('#son8').click(function() {
+			$("#son8").toggleClass("sonhover");
+			if ($play8) {
+		        $('#voix8').pauseMedia();
+		        $play8 = false;
+			}
+			else {
+				$('#voix8').playMedia();
+				$play8 = true;
+			}
+        });
 	
 	 $("#menu").click(function (){
 
