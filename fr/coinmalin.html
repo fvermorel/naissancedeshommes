@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <title>Demo</title>
   <link rel="stylesheet" href="css/idangerous.swiper.css">
-  <script type="text/javascript" src="js/jquery.js"></script>
+
 <!--	<script type="text/javascript" src="js/old.js"></script>	
 		<script type="text/javascript" src="js/book.js"></script> 	-->
 <!--	Plugin jQuery pour animations basées sur courbe de Bézier (ex : sinusoïde) -->
 <!--<script src="js/jquery.path.js"></script>
 <script src="js/jquery-ui.min.js"></script>-->
 <!--	API CCom Interactive -->
-<script src="js/ccom.js"></script>
-<script type="text/javascript" src="js/encart.js"></script>
-<script type="text/javascript" src="js/script1.js"></script>
+
 <link rel="stylesheet" href="loader.css">
-<script type="text/javascript" src="loader.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
   <style>
 /* Demo Styles */
 
@@ -646,6 +646,19 @@ h6 {
 <script src="js/jquery-1.10.1.min.js"></script> 
 <script src="js/idangerous.swiper-2.1.min.js"></script> 
 <script>
+
+  $("#menu").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+		  
+		   $(".chapitresfermer").click(function (){
+
+          $(".chapitres").toggleClass("visible");
+
+          });
+
   var tabsSwiper = new Swiper('.swiper-container',{
    
     speed:500,
@@ -690,17 +703,7 @@ h6 {
     slidesPerView: 'auto',
   })
   
-   $("#menu").click(function (){
-
-          $(".chapitres").toggleClass("visible");
-
-          });
-		  
-		   $(".chapitresfermer").click(function (){
-
-          $(".chapitres").toggleClass("visible");
-
-          });
+ 
   </script>
 </body>
 </html>
